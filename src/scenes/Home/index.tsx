@@ -18,25 +18,28 @@ export default function index({setSelectedPage}: Props) {
     <section id="home"
     className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
     {/* IMAGE AND HERO*/}    
-    <div>
+    <div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
         {/*HERO*/}
-        <div>
+        <div className="z-10 mt-32 md:basis-3/5">
             {/*HEADINGS*/}
-            <div>
-                <div>
-                    <div>
+            <div className="md:-mt-20">
+                <div className="relative">
+                    <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext">
                         <img src={HomePageText} alt="home page text" />
                     </div>
                 </div>
-                <p>
+                <p className="mt-8 text-sm">
                     Unrivaled Gym. Unparalleled Training Fitness Classes. World Class Studios To Get The Body Shapes That You Dream Of... Get Your Dream Body Now.
                 </p>
             </div>
             {/*ACTIONS*/}
-            <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
-            <AnchorLink className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-            onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-            href={`${SelectedPage.ContactUs}`}><p>Learn More</p></AnchorLink>
+            <div className="mt-8 flex items-center gap-8">
+                <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
+                <AnchorLink className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
+                onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+                href={`${SelectedPage.ContactUs}`}><p>Learn More</p></AnchorLink>
+            </div>
+            
         </div>
         {/*IMAGE*/}
         <div>
