@@ -42,15 +42,16 @@ export default function index({setSelectedPage}: Props) {
             
         </div>
         {/*IMAGE*/}
-        <div>
+        <div className="flex basis-3-5 justify-center md:z-10
+        md:ml-40 md:mt-16 md:jusify-items-end">
             <img src={HomePageGraphic} alt="home pageGraphic" />
         </div>
     </div>
     {/*SPONSORS*/}
     {isAboveMediumScreens && (
-        <div>
-            <div>
-                <div>
+        <div className="h-[150px] w-full bg-primary-100 py-10">
+            <div className="mx-auto w-5/6">
+                <div className="flex w-3/5 items-center justify-between gap-8">
                     <img src={SponsorRedbull} alt="redbull sponsor" />
                     <img src={SponsorForbes} alt="forbes sponsor" />
                     <img src={SponsorFortune} alt="fortune sponsor" />
