@@ -19,7 +19,8 @@ export default function Home({setSelectedPage}: Props) {
     <section id="home"
     className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
     {/* IMAGE AND HERO*/}    
-    <div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6">
+    <motion.div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
+    onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
         {/*HERO*/}
         <div className="z-10 mt-32 md:basis-3/5">
             {/*HEADINGS*/}
@@ -59,7 +60,7 @@ export default function Home({setSelectedPage}: Props) {
         md:ml-40 md:mt-16 md:jusify-items-end">
             <img src={HomePageGraphic} alt="home pageGraphic" />
         </div>
-    </div>
+    </motion.div>
     {/*SPONSORS*/}
     {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
