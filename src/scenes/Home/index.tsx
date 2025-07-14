@@ -51,7 +51,8 @@ export default function Home({setSelectedPage}: Props) {
                 <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
                 <AnchorLink className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
                 onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-                href={`${SelectedPage.ContactUs}`}><p>Learn More</p></AnchorLink>
+                href={`${SelectedPage.ContactUs}`}><p>Learn More</p>
+                </AnchorLink>
             </motion.div>
             
         </div>
