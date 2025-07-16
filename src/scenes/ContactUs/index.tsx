@@ -1,4 +1,4 @@
-import type { SelectedPage } from "@/shared/types"
+import { SelectedPage } from "@/shared/types"
 import {motion} from "framer-motion";
 import { useForm } from "react-hook-form";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";

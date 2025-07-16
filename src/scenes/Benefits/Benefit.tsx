@@ -1,7 +1,7 @@
 import { SelectedPage } from "@/shared/types"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { motion } from "framer-motion"
-import type { JSX } from "react"
+import { JSX } from "react"
 
 const childVariant = {
     hidden: {opacity: 0, scale: 0.9},
