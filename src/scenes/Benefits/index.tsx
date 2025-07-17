@@ -1,6 +1,6 @@
 import HText from "@/shared/HText";
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import { SelectedPage, BenefitType } from "@/shared/types";
 import Benefit from "./Benefit";
